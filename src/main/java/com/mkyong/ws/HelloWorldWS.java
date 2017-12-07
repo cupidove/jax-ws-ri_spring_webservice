@@ -1,9 +1,13 @@
-package main.java.com.mkyong.ws;
+package com.mkyong.ws;
+
+import com.mkyong.bo.HelloWorldBo;
+import com.mkyong.bo.ItemA;
+import com.mkyong.bo.impl.HelloWorldBoImpl;
 
 import javax.jws.WebMethod;
+import javax.jws.WebParam;
 import javax.jws.WebService;
-
-import main.java.com.mkyong.bo.HelloWorldBo;
+import java.util.List;
 
 @WebService(serviceName = "hello")
 public class HelloWorldWS {
@@ -12,7 +16,7 @@ public class HelloWorldWS {
     HelloWorldBo helloWorldBo;
 
     @WebMethod(exclude=true)
-    public void setHelloWorldBo(HelloWorldBo helloWorldBo) {
+    public void setHelloWorldBo( HelloWorldBo helloWorldBo) {
         this.helloWorldBo = helloWorldBo;
     }
 
@@ -21,5 +25,10 @@ public class HelloWorldWS {
 
         return helloWorldBo.getHelloWorld();
 
+    }
+
+    @WebMethod(operationName = "printItems")
+    public String printItems(@WebParam(name="items") List<ItemA> hl){
+        return "sccess";
     }
 }

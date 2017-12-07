@@ -1,6 +1,6 @@
-package main.java.com.mkyong.bo.impl;
+package com.mkyong.bo.impl;
 
-import main.java.com.mkyong.bo.HelloWorldBo;
+import com.mkyong.bo.HelloWorldBo;
 
 public class HelloWorldBoImpl implements HelloWorldBo{
     public String getHelloWorld(){

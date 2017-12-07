@@ -1,4 +1,4 @@
-package main.java.com.mkyong.bo;
+package com.mkyong.bo;
 
 public interface HelloWorldBo {
     String getHelloWorld();

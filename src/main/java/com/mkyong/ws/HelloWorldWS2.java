@@ -1,6 +1,6 @@
-package main.java.com.mkyong.ws;
+package com.mkyong.ws;
 
-import main.java.com.mkyong.bo.HelloWorldBo;
+import com.mkyong.bo.HelloWorldBo;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;

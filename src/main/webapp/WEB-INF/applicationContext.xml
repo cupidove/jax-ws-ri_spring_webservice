@@ -24,15 +24,15 @@
     </wss:binding>
 
     <!-- Web service methods -->
-    <bean id="helloWs" class="main.java.com.mkyong.ws.HelloWorldWS">
+    <bean id="helloWs" class="com.mkyong.ws.HelloWorldWS">
         <property name="helloWorldBo" ref="HelloWorldBo" />
     </bean>
 
-    <bean id="helloWs2" class="main.java.com.mkyong.ws.HelloWorldWS2">
+    <bean id="helloWs2" class="com.mkyong.ws.HelloWorldWS2">
         <property name="helloWorldBo" ref="HelloWorldBo" />
     </bean>
 
-    <bean id="HelloWorldBo" class="main.java.com.mkyong.bo.impl.HelloWorldBoImpl" />
+    <bean id="HelloWorldBo" class="com.mkyong.bo.impl.HelloWorldBoImpl" />
 
 </beans>
 
